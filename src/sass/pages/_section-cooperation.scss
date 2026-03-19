@@ -28,6 +28,13 @@
   background: url(../../../public/img/arrow-mobile.png) no-repeat center;
   background-size:cover ;
   transform: rotate(180deg);
+  @media (min-width: 320px) {
+      width: 100%;
+    }
+    @media (min-width: 575px) {
+        height: 62px;
+        width: 80%; 
+    }
    @media (min-width: 992px) {
       display: none;
     }

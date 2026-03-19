@@ -52,6 +52,8 @@
  @media (min-width: 320px) {
     padding: 6px 12px;
     font-size: 18px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     border-bottom: 1px solid #fff;
     }
     @media (min-width: 575px) {
@@ -83,6 +85,7 @@
 
 .phone_link:hover, .contacts-link:hover {
     background: #ffd00f;
+    border:1px solid #ffd00f;
     color: #000;   
     transform: translateY(-3px);
     border-radius: 12px;

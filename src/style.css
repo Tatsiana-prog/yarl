@@ -169,7 +169,7 @@ section {
     font-weight: 700;
     color: #fff;
     margin-bottom: 50px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.1);
     font-size: 45px;
   }
 }
@@ -194,7 +194,7 @@ h2 {
   font-family: "Roboto";
   font-weight: 700;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 @media (min-width: 320px) {
@@ -218,7 +218,7 @@ h3 {
   font-family: "Roboto";
   font-weight: 700;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 @media (min-width: 320px) {
@@ -445,6 +445,8 @@ h3 {
   .phone_link, .contacts-link {
     padding: 6px 12px;
     font-size: 18px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     border-bottom: 1px solid #fff;
   }
 }
@@ -488,6 +490,7 @@ h3 {
 
 .phone_link:hover, .contacts-link:hover {
   background: #ffd00f;
+  border: 1px solid #ffd00f;
   color: #000;
   transform: translateY(-3px);
   border-radius: 12px;
@@ -1216,6 +1219,17 @@ p {
   background: url(../../../public/img/arrow-mobile.png) no-repeat center;
   background-size: cover;
   transform: rotate(180deg);
+}
+@media (min-width: 320px) {
+  .arrow-mobile {
+    width: 100%;
+  }
+}
+@media (min-width: 575px) {
+  .arrow-mobile {
+    height: 62px;
+    width: 80%;
+  }
 }
 @media (min-width: 992px) {
   .arrow-mobile {
