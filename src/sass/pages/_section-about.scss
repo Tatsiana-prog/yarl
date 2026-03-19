@@ -1,0 +1,116 @@
+.section-about {
+    padding: 80px 0px;
+    @media (min-width: 320px) {
+       padding: 80px 0px 30px 0px;
+}}
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+.about__list {
+    margin-top: 40px;
+}
+.about_image {
+    width: 45%;
+    & img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.about_content {
+    flex:1;
+    color: rgb(1, 73, 102);
+}
+.about__item {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    margin-bottom: 35px;
+    & .icon-sign {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+     @media (min-width: 320px) {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    @media (min-width: 767px) {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+    }
+}
+.about__icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.about__item-title {
+    position: relative;
+    min-width: 200px;
+    padding: 10px 15px;
+    border-radius:12px;
+    border: 1px solid #c4c4c4;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.4),
+    0 6px 12px rgba(0, 0, 0, 0.25);
+     @media (min-width: 320px) {
+        justify-content: center;}
+}
+.about__item {
+    align-items: center;
+}
+
+.about__item:last-child {
+    @media (min-width: 320px) {
+        align-items: center;
+        & h3 {
+            text-align: left;
+        }
+     }
+       @media (min-width: 767px) {
+        align-items: flex-start;
+       
+     }
+}
+.about__item-list {
+    list-style-type:disc;
+    color: #fff;
+    padding-left: 50px;
+    text-align: left;
+    & li {
+        margin-bottom: 10px;
+    }
+     @media (min-width: 767px) {
+        padding-left: 15px;
+     }
+}
+.item-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-1 {
+    background: url(../../../public/img/icons/icon-company.svg) no-repeat center;
+    background-size: cover;
+}
+
+.icon-2 {
+    background: url(../../../public/img/icons/icon-task.svg) no-repeat center;
+    background-size: cover;
+}
+
+.icon-3 {
+    background: url(../../../public/img/icons/icon-clients.svg) no-repeat center;
+    background-size: cover;
+}
+.icon-4 {
+    background: url(../../../public/img/icons/icon-cooperation.svg) no-repeat center;
+    background-size: cover;
+}

@@ -1,0 +1,57 @@
+
+.modal-icon {
+    display: flex;
+    width: 35px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  
+    @media (min-width: 992px) {
+    display: none;
+    }
+  }
+
+  .modal-icon__middle {
+    position: relative;
+    width: 35px;
+    height: 2px;
+    background-color: #FFFFFF;
+  }
+  .modal-icon__middle::before, .modal-icon__middle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    background-color: #FFFFFF;
+  }
+  .modal-icon__middle::before {
+    top: -10px;
+  }
+  .modal-icon__middle::after {
+    top: 10px;
+  }
+  
+  .modal-icon.modal-icon--active {
+    position: fixed;
+    top: 38px;
+    left: 22px;
+    z-index: 154;
+  }
+  
+  .modal-icon.modal-icon--active .modal-icon__middle {
+    background-color: transparent;
+  }
+  .modal-icon.modal-icon--active .modal-icon__middle::before, .modal-icon.modal-icon--active .modal-icon__middle::after {
+    width: 35px;
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    background-color: #fff;
+  }
+  .modal-icon.modal-icon--active .modal-icon__middle::before {
+    transform: rotate(45deg);
+  }
+  .modal-icon.modal-icon--active .modal-icon__middle::after {
+    transform: rotate(-45deg);
+  }

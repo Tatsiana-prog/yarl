@@ -1,0 +1,325 @@
+.section-cooperation {
+   padding: 80px 0px;
+     @media (min-width: 320px) {
+       padding: 40px 0px;
+}}
+.cooperation {
+    color:#fff;
+    & h3 {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+}
+.cooperation__content {
+    display: flex;
+    padding-top: 40px;
+    @media (min-width: 320px) {
+      flex-direction: column;
+    }
+     @media (min-width: 992px) {
+      flex-direction: row;
+      align-items: center;
+    }
+}
+.arrow-mobile {
+  margin: 0 auto;
+  width: 80%;
+  height: 40px;
+  background: url(../../../public/img/arrow-mobile.png) no-repeat center;
+  background-size:cover ;
+  transform: rotate(180deg);
+   @media (min-width: 992px) {
+      display: none;
+    }
+}
+
+.cooperation__content .arrow-mobile:nth-child(4){
+    transform: rotate(0deg);
+}
+
+.cooperation__box {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin: auto 0;
+     @media (min-width: 320px) {
+      width: 100%;
+    }
+    & p {
+        margin-top: 10px;
+        font-size: 18px;
+        padding-left: 30px;
+    }
+}
+
+.cooperation__box:first-child {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+     @media (min-width: 320px) {
+      width: 100%;
+      }
+       @media (min-width: 992px) {
+        justify-content: center;
+      }
+    & img {
+    transform: rotate(0deg);
+    }
+}
+.cooperation__box:nth-child(2) {
+    width: 40%;
+     @media (min-width: 320px) {
+      width: 100%;
+    }
+}
+.cooperation__box:nth-child(5) {
+    width: 30%;
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    padding-left: 125px;
+     @media (min-width: 320px) {
+      width: 100%;
+      padding-left: 0;
+    }
+    @media (min-width: 992px) {
+      width: 100%;
+      justify-content: flex-start;
+      margin-top: auto;
+      padding-left: 70px;
+    }
+   
+     @media (min-width: 767px) {
+        position: static;
+     }
+    & img {
+    transform: rotate(-25deg);
+    }
+}
+
+.cooperation__box-title {
+    display: flex;
+    position: relative;
+    align-items: center;
+     @media (min-width: 320px) {
+      justify-content: center;;
+    }
+}
+
+.image-market {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    top:20px;
+    }
+    .image-import {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    top:8px;
+    }
+
+    .image-proizv{
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    top:8px;
+    }
+
+.cooperation__list {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    border: 1px solid transparent;
+     @media (min-width: 320px) {
+      padding: 10px;
+    } 
+}
+.cooperation__list-item {
+    position: relative;
+    line-height: 25px;
+    padding:25px 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    align-items: center;
+    &::before {
+        position: absolute;
+        content: "";
+        bottom:0;
+        width: 100%;
+        height: 2px;
+        background:linear-gradient(90deg, rgb(81, 86, 92),white, rgb(81, 86, 92))
+    }
+}
+.cooperation__list-item span {
+    flex-grow: 0; /* span не будет пытаться занять лишнее место */
+}
+.cooperation__list-item:first-child .image-market {
+    width: 250px;
+}
+.cooperation__list-item:nth-child(2) .image-market{
+    width: 80px;
+}
+.cooperation__image {
+    margin-left: 30px;
+    width: 120px;
+     @media (min-width: 320px) {
+        width: 60px;
+        margin-left: 10px;
+     }
+      @media (min-width: 575px) {
+        width: 60px;
+        margin: 0px 15px;
+     }
+}
+.cooperation__image img {
+    width: 120px;
+    transform: rotate(-25deg);
+     @media (min-width: 320px) {
+        width: 40px;
+     }
+      @media (min-width: 575px) {
+        width: 50px;
+     }
+}
+
+.cooperation__list-arrow  {
+    position: absolute;
+    & img {
+        width: 135px;
+         @media (min-width: 767px) {
+        width: 80px;
+        } 
+    }
+}
+
+.arrow1 {
+    top:55%;
+    left: -30%;
+    transform: rotate(45deg);
+     @media (min-width: 320px) {
+      display: none;
+    }
+     @media (min-width: 992px) {
+        left: -38%;
+        display: block;
+        } 
+}
+.arrow2 {
+    top:16%;
+    left: -20%;
+    transform: rotate(74deg);
+     @media (min-width: 320px) {
+      display: none;
+    }
+     @media (min-width: 992px) {
+        display: block;
+        left: -38%;
+    } 
+    & img {
+        width: 91px;
+        @media (min-width: 992px) {
+        width: 70px;
+    } 
+    }
+}
+
+.arrow3 {
+    top:-45%;
+    left: -20%;
+    transform: rotate(125deg);
+     @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 992px) {
+        top: -12%;
+        left: -40%;
+        display: block;
+        } 
+    & img {
+        width: 91px;
+        @media (min-width: 992px) {
+         width: 71px;
+        } 
+    }
+}
+
+.arrow4 {
+    top:-158%;
+    left: -30%;
+    transform: rotate(145deg);
+     @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 992px) {
+        top: -76%;
+        left: -46%;
+        display: block;
+    }
+}
+.arrow5 {
+    top:48%;
+    right: -30%;
+    transform: rotate(145deg);
+     @media (min-width: 320px) {
+      display: none;
+    }
+     @media (min-width: 992px) {
+        display: block;
+         transform: rotate(140deg);
+        
+    } 
+}
+.arrow6 {
+    top:19%;
+    right: -23%;
+    transform: rotate(125deg);
+     @media (min-width: 320px) {
+      display: none;
+    }
+     @media (min-width: 992px) {
+        display: block;
+         right: -40%;
+    } 
+    & img {
+        width: 91px;
+        @media (min-width: 992px) {
+         width: 70px;
+    }
+    }
+}
+
+.arrow7 {
+    top:-33%;
+    right: -23%;
+    transform: rotate(74deg);
+     @media (min-width: 320px) {
+      display: none;
+    }
+     @media (min-width: 992px) {
+        display: block;
+        top: -15%;
+        right: -43%;
+    } 
+    & img {
+        width: 91px;
+         @media (min-width: 992px) {
+         width: 70px;
+    } 
+    }
+} 
+.arrow8 {
+    top:-136%;
+    right: -31%;
+   transform: rotate(55deg);
+ @media (min-width: 320px) {
+      display: none;
+    }
+     @media (min-width: 992px) {
+        display: block;
+        top: -69%;
+        right: -38%;
+    } 
+}

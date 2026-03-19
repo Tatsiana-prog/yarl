@@ -1,0 +1,99 @@
+.section-order {
+    padding: 80px 0px;
+     background-image: 
+    linear-gradient(rgba(81, 86, 92, 0.95), rgba(81, 86, 92, 0.8)), 
+    url('../../../public/img/bg3.png');
+    background-size: cover;
+    background-position: center;
+    @media (min-width: 320px) {
+       padding: 80px 0px;
+}}
+
+.inst_link {
+    display: flex;
+    align-items: center;
+    color:white;
+    gap:7px;
+}
+
+.order_content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 320px) {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+     @media (min-width: 575px) {
+       flex-direction: row;
+    }
+    }
+.order__item {
+    padding: 0 8px;
+    width: 48%;
+    margin: 0 auto;
+    text-align: left;
+    @media (min-width: 320px) {
+       width: 100%;
+    }
+    @media (min-width: 992px) {
+       & .contacts_list {
+        width: 50%;
+       }
+    }
+    & .icon-sign {
+        width: 15px;
+        height: 15px;
+    }
+    & .phone_link {
+        width: 50%;
+        font-size: 18px;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 20px;
+         @media (min-width: 320px) {
+       width: 100%;
+    }
+    }
+    & .icon-phone, .icon-email, .icon-inst {
+        width: 20px;
+        height: 20px;
+    }
+   }
+.order__item:nth-child(2) {
+    border-left: 2px solid;
+    border-image-source: linear-gradient(
+        to bottom,
+        #4a4a4a,
+        #ffffff,
+        #4a4a4a
+    );
+    border-image-slice: 1;
+    @media (min-width: 320px) {
+       border: none;
+    }
+}
+.order_list {
+    margin-top: 12px;
+    color:#fff;
+    font-size: 18px;
+    & li {
+        padding-left: 8px;
+        display: flex;
+        align-items: flex-start;
+        font-size: 18px;
+        margin-bottom: 15px;
+         @media (min-width: 320px) {
+            padding-left: 0px;
+        }
+    }
+   }
+   .item-text {
+    font-size: 18px;
+    line-height: 1.4;
+   }
+
+.text-primary {
+    text-transform: uppercase;
+    font-weight: 600;
+}
