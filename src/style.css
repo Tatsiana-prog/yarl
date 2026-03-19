@@ -4,7 +4,6 @@
   src: url("/public/fonts/Roboto/Roboto-Regular.ttf"), url("/public/fonts/Roboto/Roboto-Bold.ttf");
   /* Дополнительные форматы шрифтов, если необходимо */
 }
-/* Mixins */
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -916,7 +915,7 @@ p {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url(/public/img/elzk.png) no-repeat center;
+  background: url(/public/img/elzk.webp) no-repeat center;
   background-size: cover;
   margin: 5px 0 0 5px;
 }
@@ -1071,7 +1070,7 @@ p {
 
 .section-order {
   padding: 80px 0px;
-  background-image: linear-gradient(rgba(81, 86, 92, 0.95), rgba(81, 86, 92, 0.8)), url("../../../public/img/bg3.png");
+  background-image: linear-gradient(rgba(81, 86, 92, 0.95), rgba(81, 86, 92, 0.8)), url("../../../public/img/bg3.webp");
   background-size: cover;
   background-position: center;
 }
@@ -1791,6 +1790,10 @@ p {
 .footer__row .logo-footer img {
   width: 30px;
   transform: rotate(-15deg);
+}
+
+.footer__row.policy-row {
+  align-items: center;
 }
 
 .title-1 {

@@ -6,9 +6,12 @@
   }
 }
 
-.footer__row .logo-footer img {
+.footer__row  .logo-footer img {
   width: 30px;
   transform: rotate(-15deg);
+}
+.footer__row.policy-row  {
+  align-items: center;
 }
 .container {
 }
