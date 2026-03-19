@@ -1,81 +1,77 @@
 .btn {
-    display: inline-block;
-    margin-top: 35px;
-    padding: 16px 26px;
-    font-family: Roboto, sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 35px;
+  padding: 16px 26px;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
-    background: #ffc30f;
-    color: #000;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background: #ffc30f;
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
-    /* Объём */
-    box-shadow:
-        0 4px 10px rgba(0,0,0,0.25),
-        0 8px 20px rgba(0,0,0,0.15);
+  /* Объём */
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.25),
+    0 8px 20px rgba(0, 0, 0, 0.15);
 
-    /* Лёгкий объём текста */
-    text-shadow:
-        0 1px 0 rgba(255,255,255,0.6),
-        0 2px 4px rgba(0,0,0,0.25);
+  /* Лёгкий объём текста */
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6),
+    0 2px 4px rgba(0, 0, 0, 0.25);
 }
-
 
 /* Hover — кнопка приподнимается */
 .btn:hover {
-    background: #ffc30f;
-    transform: translateY(-4px);
+  background: #ffc30f;
+  transform: translateY(-4px);
 
-    box-shadow:
-        0 10px 25px rgba(0,0,0,0.3),
-        0 6px 12px rgba(0,0,0,0.2);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.3),
+    0 6px 12px rgba(0, 0, 0, 0.2);
 
-    text-shadow: none;
+  text-shadow: none;
 }
-
 
 /* Active — кнопка вдавливается */
 .btn:active {
-    transform: translateY(0);
-    box-shadow:
-        0 4px 10px rgba(0,0,0,0.25);
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 .modal__btn-wrapper {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .modal__btn {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    padding: 8px 16px;
-    width: 100%;
-    column-gap: 8px;
-    border-radius: 13px;
-    border: 1px solid #fff;
-    margin-bottom: 0;
-    transition: all 0.3s linear;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 8px 16px;
+  width: 100%;
+  column-gap: 8px;
+  border-radius: 13px;
+  border: 1px solid #fff;
+  margin-bottom: 0;
+  transition: all 0.3s linear;
+  font-size: 18px;
+  /* Объём текста */
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.3),
+    0 3px 6px rgba(0, 0, 0, 0.4);
+
+  /* Лёгкий стеклянный эффект */
+  backdrop-filter: blur(2px);
+  &:hover {
+    color: #000;
+    border: 1px solid #ffc30f;
     font-size: 18px;
-    /* Объём текста */
-    text-shadow:
-        0 1px 0 rgba(255,255,255,0.3),
-        0 3px 6px rgba(0,0,0,0.4);
-
-    /* Лёгкий стеклянный эффект */
-    backdrop-filter: blur(2px);
-    &:hover {
-        color:#000;
-        border: 1px solid  #ffc30f;
-        font-size: 18px;
-        font-weight: 600;
-        background: #ffc30f;
-    }
+    font-weight: 600;
+    background: #ffc30f;
+  }
 }
-

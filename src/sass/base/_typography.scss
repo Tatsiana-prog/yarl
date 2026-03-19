@@ -1,139 +1,135 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   position: relative;
   background: rgb(81, 86, 92);
   height: 100%;
   font-family: "Roboto";
-  }
+}
 .wrapper {
   width: 100%;
   margin: 0 auto;
 }
-  .container {
-    max-width: 1440px;
-    font-family: 'Roboto';
-    margin: 0 auto;
-    
-    @media (min-width: 320px) {
-      font-size: 18px;
-      padding:  0 15px;
-    }
-    @media (min-width: 767px) {
-      padding:  0 30px;
-    }
-    }
- 
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.container {
+  max-width: 1440px;
+  font-family: "Roboto";
+  margin: 0 auto;
+  @media (min-width: 320px) {
+    font-size: 18px;
+    padding: 0 15px;
   }
-  img {
-    object-fit: cover;
+  @media (min-width: 767px) {
+    padding: 0 30px;
   }
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  object-fit: cover;
+}
 
-  section {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
+section {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-
-
-  //animations
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  100% {
+    opacity: 1;
   }
+}
 
-  @keyframes textUp {
-    0% {
-      transform: translateY(100px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+@keyframes textUp {
+  0% {
+    transform: translateY(100px);
   }
-  @keyframes slideLeft {
-    from {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateX(-100%);
-        opacity: 0; /* Уменьшаем прозрачность при сдвиге */
-    }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 }
 h1 {
- 
-     @media (min-width: 320px) {
-       font-family: "Roboto";
-      font-weight: 700;
-      color:#fff;
-      margin-bottom: 50px;
-      text-shadow:
-    0 2px 4px rgba(0, 0, 0, 0.1),
-    0 6px 12px rgba(0, 0, 0, 0.10);
-      font-size: 45px;
-    }
-     @media (min-width: 767px) {
-      font-size: 55px;
-    }
-     @media (min-width: 992px) {
-      font-size: 65px;
-    }
-     @media (min-width: 1199px) {
-      font-size: 85px;
-    }
+  @media (min-width: 320px) {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 50px;
+    text-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.1),
+      0 6px 12px rgba(0, 0, 0, 0.1);
+    font-size: 45px;
+  }
+  @media (min-width: 767px) {
+    font-size: 55px;
+  }
+  @media (min-width: 992px) {
+    font-size: 65px;
+  }
+  @media (min-width: 1199px) {
+    font-size: 85px;
+  }
 }
 
-
-h2{
+h2 {
   font-size: 40px;
- font-family: "Roboto";
+  font-family: "Roboto";
   font-weight: 700;
-  color:#fff;
+  color: #fff;
   text-shadow:
     0 2px 4px rgba(0, 0, 0, 0.1),
-    0 6px 12px rgba(0, 0, 0, 0.10);
-text-align: center;
-@media (min-width: 320px) {
-      font-size: 35px;
-    }
-     @media (min-width: 992px) {
-      font-size: 45px;
-    }
-     @media (min-width: 1199px) {
-      font-size: 65px;
-    }
+    0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  @media (min-width: 320px) {
+    font-size: 35px;
+  }
+  @media (min-width: 992px) {
+    font-size: 45px;
+  }
+  @media (min-width: 1199px) {
+    font-size: 65px;
+  }
 }
 
-h3{
+h3 {
   font-size: 20px;
- font-family: "Roboto";
+  font-family: "Roboto";
   font-weight: 700;
-  color:#fff;
+  color: #fff;
   text-shadow:
     0 2px 4px rgba(0, 0, 0, 0.1),
-    0 6px 12px rgba(0, 0, 0, 0.10);
-text-align: center;
-@media (min-width: 320px) {
-      font-size: 18px;
-    }
-     @media (min-width: 992px) {
-      font-size: 25px;
-    }
-     @media (min-width: 1199px) {
-      font-size: 30px;
-    }
+    0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  @media (min-width: 320px) {
+    font-size: 18px;
+  }
+  @media (min-width: 992px) {
+    font-size: 25px;
+  }
+  @media (min-width: 1199px) {
+    font-size: 30px;
+  }
 }
 
 .icon-phone {
   display: block;
   background: url(../../../public/img/icons/icon-phone.svg) no-repeat center;
-  background-size: cover ;
+  background-size: cover;
   transition: all 0.3s linear;
   @media (min-width: 320px) {
     width: 20px;
@@ -151,15 +147,15 @@ text-align: center;
   width: 18px;
   height: 18px;
   background: url(../../../public/img/icons/icon-time.svg) no-repeat center;
-  background-size: cover ;
+  background-size: cover;
 }
 .icon-map {
   display: block;
   width: 30px;
   height: 30px;
   background: url(../../../public/img/icons/icon-map.svg) no-repeat center;
-  background-size: cover ;
-   @media (min-width: 320px) {
+  background-size: cover;
+  @media (min-width: 320px) {
     width: 20px;
     height: 20px;
   }
@@ -170,37 +166,30 @@ text-align: center;
   width: 30px;
   height: 30px;
   background: url(../../../public/img/icons/icon-inst.svg) no-repeat center;
-  background-size: cover ;
-   @media (min-width: 320px) {
+  background-size: cover;
+  @media (min-width: 320px) {
     width: 20px;
     height: 20px;
   }
-  
 }
 
-.icon-email{
-   display: inline-block;
+.icon-email {
+  display: inline-block;
   width: 30px;
   height: 30px;
   background: url(../../../public/img/icons/icon-email.svg) no-repeat center;
-  background-size: cover ;
-   @media (min-width: 320px) {
+  background-size: cover;
+  @media (min-width: 320px) {
     width: 20px;
     height: 20px;
   }
-  
 }
-.icon-check{
+.icon-check {
   display: inline-block;
   width: 20px;
   height: 20px;
   margin-right: 7px;
   background: url(../../../public/img/icons/icon-check.svg) no-repeat center;
-  background-size: cover ;
+  background-size: cover;
   flex-shrink: 0;
 }
-
-
-
-
-

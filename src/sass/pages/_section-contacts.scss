@@ -1,133 +1,138 @@
 .section-contacts {
-    padding: 80px 0;
-      @media (min-width: 320px) {
-       padding: 80px 0px 80px 0px;
-}}
+  padding: 80px 0;
+  @media (min-width: 320px) {
+    padding: 80px 0px 80px 0px;
+  }
+}
 .contacts {
-    color: #fff;
+  color: #fff;
 }
 .contacts-row {
-    position: relative;
-    display: flex;
-    padding: 30px;
-    justify-content: center;
-    column-gap: 80px;
-    align-items: center;
-     @media (min-width: 320px) {
-      flex-direction: column;
-      padding: 0;
-       column-gap: 20px;
-      }
-       @media (min-width: 575px) {
-      flex-direction: row;
-       column-gap: 40px;
-    } 
-     @media (min-width: 767px) {
-      column-gap: 50px;
-    }
-    @media (min-width: 992px) {
-      column-gap: 200px;
-      
-    }
-    
+  position: relative;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  column-gap: 80px;
+  align-items: center;
+  @media (min-width: 320px) {
+    flex-direction: column;
+    padding: 0;
+    column-gap: 20px;
+  }
+  @media (min-width: 575px) {
+    flex-direction: row;
+    column-gap: 40px;
+  }
+  @media (min-width: 767px) {
+    column-gap: 50px;
+  }
+  @media (min-width: 992px) {
+    column-gap: 200px;
+  }
 }
 
 .contacts-row .contacts__boxes {
- @media (min-width: 320px) {
-margin-top: 40px;
- }
+  @media (min-width: 320px) {
+    margin-top: 40px;
+  }
 }
 
-.contacts__block{
-    width: 50%;
-     @media (min-width: 320px) {
-      width: 100%;
-    } 
+.contacts__block {
+  width: 50%;
+  @media (min-width: 320px) {
+    width: 100%;
+  }
 }
 .logo {
+  width: 200px;
+  transform: rotate(-18deg);
+  @media (min-width: 320px) {
+    display: none;
+  }
+  @media (min-width: 575px) {
+    display: block;
+    width: 150px;
+  }
+  @media (min-width: 767px) {
     width: 200px;
-    transform: rotate(-18deg);
-     @media (min-width: 320px) {
-      display: none;
+  }
+  img {
+    @media (min-width: 320px) {
+      width: 50px;
     }
-     @media (min-width: 575px) {
-      display: block;
-       width: 150px;
-    }
-     @media (min-width: 767px) {
-        width: 200px;
-    }    
-    img {
-       @media (min-width: 320px) {
-        width: 50px;  
-    } 
     @media (min-width: 575px) {
-         width: 150px;
-      }
-      @media (min-width: 767px) {
-         width: 200px;
+      width: 150px;
     }
-     @media (min-width: 992px) {
-         width: 250px;
-    }       
+    @media (min-width: 767px) {
+      width: 200px;
     }
+    @media (min-width: 992px) {
+      width: 250px;
+    }
+  }
 }
 .contacts__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-     background-image: 
-    linear-gradient(rgba(81, 86, 92, 0.95), rgba(81, 86, 92, 0.85)), 
-    url('../../../public/img/contacts.jpg');
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-image:
+    linear-gradient(rgba(81, 86, 92, 0.95), rgba(81, 86, 92, 0.85)),
+    url("../../../public/img/contacts.jpg");
+
   /* Настройка фонового изображения */
   background-size: cover; /* Изображение покрывает блок {Link: W3Schools http://www.w3schools.com.en2ru.search.translate.goog/csSref/css3_pr_background-size.php} [4] */
   background-position: center; /* Центрирование */
   background-repeat: no-repeat;
   height: 350px;
   margin-bottom: 60px;
-   @media (min-width: 320px) {
-      margin-bottom: 20px;
-    } 
+  @media (min-width: 320px) {
+    margin-bottom: 20px;
+  }
 }
 .contacts__title h2 {
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: center;
-    vertical-align:middle;
-
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  vertical-align: middle;
 }
 .contacts__boxes {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .contacts__boxes .phone_link {
-    font-size: 18px;
-    line-height: 1.4;
-    border-bottom: 1px solid #fff;
-    width: 300px;
-   }
-   .contacts-link {
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-        font-weight: 600;
-    }
-   }
+  font-size: 18px;
+  line-height: 1.4;
+  border-bottom: 1px solid #fff;
+  width: 300px;
+}
+.contacts-link {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    font-weight: 600;
+  }
+}
 
-   /* Карта */
- 
+/* Карта */
+
 .map:hover .icon-map {
-    background-image: url('../../../public/img/icons/icon-map-black.svg') }
+  background-image: url("../../../public/img/icons/icon-map-black.svg");
+}
 
 /* Телефон */
-.phone:hover .icon-phone { background-image: url('../../../public/img/icons/icon-phone-primary.svg'); }
+.phone:hover .icon-phone {
+  background-image: url("../../../public/img/icons/icon-phone-primary.svg");
+}
 
 /* Инстаграм */
-.inst:hover .icon-inst { background-image: url('../../../public/img/icons/icon-inst-black.svg'); }
+.inst:hover .icon-inst {
+  background-image: url("../../../public/img/icons/icon-inst-black.svg");
+}
 
 /* Почта */
-.mail:hover .icon-email { background-image: url('../../../public/img/icons/icon-email-black.svg'); }
+.mail:hover .icon-email {
+  background-image: url("../../../public/img/icons/icon-email-black.svg");
+}
