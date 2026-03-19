@@ -169,7 +169,7 @@ section {
     font-weight: 700;
     color: #fff;
     margin-bottom: 50px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
     font-size: 45px;
   }
 }
@@ -194,7 +194,7 @@ h2 {
   font-family: "Roboto";
   font-weight: 700;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 @media (min-width: 320px) {
@@ -218,7 +218,7 @@ h3 {
   font-family: "Roboto";
   font-weight: 700;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 @media (min-width: 320px) {
@@ -425,7 +425,6 @@ h3 {
 
 .phone_link, .inst_link, .contacts-link {
   display: flex;
-  border-radius: 12px;
   align-items: center;
   gap: 7px;
   color: #FFF;
