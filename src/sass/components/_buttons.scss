@@ -14,7 +14,6 @@
     border: none;
     border-radius: 12px;
     cursor: pointer;
-
     transition: all 0.3s ease;
 
     /* Объём */
@@ -45,7 +44,6 @@
 /* Active — кнопка вдавливается */
 .btn:active {
     transform: translateY(0);
-
     box-shadow:
         0 4px 10px rgba(0,0,0,0.25);
 }
@@ -65,7 +63,6 @@
     margin-bottom: 0;
     transition: all 0.3s linear;
     font-size: 18px;
-    
     /* Объём текста */
     text-shadow:
         0 1px 0 rgba(255,255,255,0.3),

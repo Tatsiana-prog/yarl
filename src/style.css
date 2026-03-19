@@ -428,6 +428,9 @@ h3 {
   align-items: center;
   gap: 7px;
   color: #FFF;
+  border: 1px solid transparent;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   padding: 8px 18px;
   font-size: 25px;
   transition: all 0.3s linear;
@@ -1591,7 +1594,7 @@ p {
 .arrow8 {
   top: -136%;
   right: -31%;
-  transform: rotate(55deg);
+  transform: rotate(65deg);
 }
 @media (min-width: 320px) {
   .arrow8 {
